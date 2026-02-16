@@ -40,31 +40,3 @@ export const getProductById = (id) =>
   new Promise((resolve) =>
     setTimeout(() => resolve(products.find((p) => p.id === id)), 300)
   );
-  import { Link, NavLink } from "react-router-dom";
-import CartWidget from "./CartWidget";
-
-function NavBar() {
-  return (
-    <>
-      <header className="header">
-        <Link to="/" aria-label="Ir al inicio">
-          <img src="/images/vali-logo.png" alt="Logo VĀLI" className="logo" />
-        </Link>
-      </header>
-
-      <nav className="nav">
-        <ul className="nav-list">
-          <li><NavLink to="/">Inicio</NavLink></li>
-          <li><NavLink to="/productos">Productos</NavLink></li>
-          <li><NavLink to="/colecciones">Colecciones</NavLink></li>
-          <li><NavLink to="/sobre-nosotros">Sobre Nosotros</NavLink></li>
-          <li><NavLink to="/contactanos">Contáctanos</NavLink></li>
-        </ul>
-
-        <CartWidget />
-      </nav>
-    </>
-  );
-}
-
-export default NavBar;
