@@ -1,6 +1,8 @@
-function ItemListContainer() {
+function ItemListContainer({ greeting }) {
   return (
     <main>
+      <h2 className="bienvenida">{greeting}</h2>
+
       <section className="portada">
         <img
           src="/images/vali-inicio-portada.jpg"

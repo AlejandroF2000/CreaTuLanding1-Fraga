@@ -1,7 +1,7 @@
 function CartWidget() {
   return (
     <div className="cart">
-      Carrito <span className="badge">0</span>
+      🛒 <span className="badge">0</span>
     </div>
   );
 }
